@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>products2</title>
+	<link rel="stylesheet" type="text/css" href="MyStore.css">
+
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,300">
+</head>
+<body>
+
+
+
+<div class="container pink pink1 pt-3">
+	<div class="navbar">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL_WJ_YS4Mrv5cieYkRJp5aw0lO3sd7cBiQ&usqp=CAU" height="50px" width="100px">
+			<nav>
+				<ul id="Menuitems">
+					<li><a href="MyStore.html">Home</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="#aboutid">About</a></li>
+					<li><a href="#contactid">Contact</a></li>
+					<li><a href="accountCart.html">Account</a></li>
+				</ul>
+			</nav>
+			<a href="cart.html"><i class="fa fa-shopping-cart fa-2x" style="color: black"></i></a>
+			<i class=" fa fa-align-justify fa-2x menu-icon" onclick="menutoggle()"></i>
+		</div>
+	</div>
+
+
+<div class="small-conatiner1 mt-5 mb-5" style="text-align: center" id="productid">
+	<div class="row row-2 pb-5">
+		<h2>All Products</h2>
+		<select>
+			<option>Default Sorting</option>
+			<option>Sort by Price</option>
+			<option>Sort by Popularity</option>
+			<option>Sort by Rating</option>
+			<option>Sort by Sale</option>
+		</select>
+	</div>
+	<div class="row justify-content-around">
+		<div class=" second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kjn6qvk0-0/sock/s/v/z/free-3-bynox-ank-bl-gr-blue001-bynox-original-imafz5s46r6hab5v.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kj4m0sw0-0/t-shirt/5/c/4/s-tsrt-303-reya-original-imafyrjprxpfbhqr.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/k7m8brk0/t-shirt/u/x/f/l-sl0020maroonblack-slowloris-original-imafpsuj6xgszcsp.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/416/416/jnoxa4w0/smart-band-tag/5/s/q/m2-b-fanosons-original-imaf9jx8z9nudf6h.jpeg?q=70" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mt-3">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/k37mg7k0/t-shirt/t/e/m/s-dq2618-adidas-original-imafmczdgvrgaszz.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mt-3">
+			<img src="https://rukminim1.flixcart.com/image/416/416/k7f34i80/smart-band-tag/k/h/v/xmsh07hm-mi-original-imafpnxz4vgnzabw.jpeg?q=70" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mt-3">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kn97te80/watch/w/2/e/men-s-steel-chain-rb02-silver-black-daniel-jubile-original-imagfz5cyskfzzne.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mt-3">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kkcwo7k0/track-pant/h/2/c/xl-solid-men-black-track-pants-foxter-original-imafzq5fp3jr5ktu.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>$50.0</h6>
+		</div>
+	</div>
+	<div class="pagebtn">
+		<a href=""><span>1</span></a>
+		<a href=""><span>2</span></a>
+		<a href="products.html"><span>3</span></a>
+		<a href=""><span>4</span></a>
+		<i class="fa fa-arrow-right pl-3"></i>
+	</div>
+	</div>
+
+
+
+
+
+
+
+<!-- --------footer------- -->
+
+
+	<div class="footer">
+	<div class="small-conatiner5">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-6">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and ios mobile phone</p>
+				<div class="app-logo">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9piJ5cY3IAN9q4bd6DQphOyMZDJ2XaCQIZg&usqp=CAU" class="img1">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPRjkX9lU9_Ke5vD9ImbeLA2giwVX1GDgrg&usqp=CAU" class="img2">
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL_WJ_YS4Mrv5cieYkRJp5aw0lO3sd7cBiQ&usqp=CAU" height="50px" width="100px">
+				<p>Our purpose is to sustainably make the Pleasure and Benefits of Sports Accessible to All.</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+            <div class="col-lg-3 col-md-3 col-6">
+            	<h3>Follow Us</h3>
+            	<ul>
+            		<li>Facebook</li>
+            		<li>Twitter</li>
+            		<li>Instagram</li>
+            		<li>YouTube</li>
+            	</ul>
+            </div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2021</p>
+	</div>
+</div>
+
+<script>
+	var Menuitems = document.getElementById("Menuitems");
+	Menuitems.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(Menuitems.style.maxHeight == "0px")
+		{
+			Menuitems.style.maxHeight = "200px";
+		}
+		else
+		{
+			Menuitems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+</body>
+</html>

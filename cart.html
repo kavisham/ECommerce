@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="MyStore.css">
+
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,300">
+</head>
+<body>
+
+
+
+<div class="container pink pink1 pt-3">
+	<div class="navbar">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL_WJ_YS4Mrv5cieYkRJp5aw0lO3sd7cBiQ&usqp=CAU" height="50px" width="100px">
+			<nav>
+				<ul id="Menuitems">
+					<li><a href="MyStore.html">Home</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="#aboutid">About</a></li>
+					<li><a href="#contactid">Contact</a></li>
+					<li><a href="accountCart.html">Account</a></li>
+				</ul>
+			</nav>
+			<a href="cart.html"><i class="fa fa-shopping-cart fa-2x" style="color: black"></i></a>
+			<i class=" fa fa-align-justify fa-2x menu-icon" onclick="menutoggle()"></i>
+		</div>
+	</div>
+
+<!-- -------cart items deatils------- -->
+<div class="small-container9 cart-page">
+	<table style="width: 100%">
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Subtotal</th>
+		</tr>
+		
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/k0wqwsw0/sweatshirt/4/e/g/m-ea0416-adidas-original-imafkheuksztjytk.jpeg?q=50" width="100%">
+					<div>
+						<p>Full Sleeve Solid Women Sweatshirt</p>
+						<small>Price : $50.00</small><br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="valclass">
+					<ul class="d-flex" style="list-style: none;">
+						<li class="page-item">
+							<button class="page-link" onclick="decr('textbox2','priceid2')" id="dec">
+								<i class="fa fa-minus"></i>
+							</button>
+						</li>
+						<li class="page-item">
+							<input class="page-link" type="text" value="0" id="textbox2">
+						</li>
+						<li class="page-item">
+							<button class="page-link"  onclick="incr('textbox2','priceid2')" id="inc">
+								<i class="fa fa-plus"></i>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</td>
+			<td id="priceid2">0.00</td>
+		</tr>
+
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/kn6cxow0/t-shirt/0/3/g/l-trdrnful-d35-tripr-original-imagfwswy9ghhksh.jpeg?q=50" width="100%">
+					<div>
+						<p>Red Printed T-Shirt</p>
+						<small>Price : $50.00</small><br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="valclass">
+					<ul class="d-flex" style="list-style: none;">
+						<li class="page-item">
+							<button class="page-link" onclick="decr('textbox1','priceid1')" id="dec">
+								<i class="fa fa-minus"></i>
+							</button>
+						</li>
+						<li class="page-item">
+							<input class="page-link" type="text" value="0" id="textbox1">
+						</li>
+						<li class="page-item">
+							<button class="page-link"  onclick="incr('textbox1','priceid1')" id="inc">
+								<i class="fa fa-plus"></i>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</td>
+			<td id="priceid1">0.00</td>
+		</tr>
+
+		
+		<!-- <tr>
+			<td>
+				<div class="cart-info">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/kjn6qvk0-0/sock/s/v/z/free-3-bynox-ank-bl-gr-blue001-bynox-original-imafz5s46r6hab5v.jpeg?q=50" width="100%">
+					<div>
+						<p>Red Printed T-Shirt</p>
+						<small>Price : $50.00</small><br>
+						<a href="">Remove</a>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="valclass">
+					<ul class="d-flex" style="list-style: none;">
+						<li class="page-item">
+							<button class="page-link" onclick="decr('textbox3','priceid3')" id="dec">
+								<i class="fa fa-minus"></i>
+							</button>
+						</li>
+						<li class="page-item">
+							<input class="page-link" type="text" value="0" id="textbox3">
+						</li>
+						<li class="page-item">
+							<button class="page-link"  onclick="incr('textbox3','priceid3')" id="inc">
+								<i class="fa fa-plus"></i>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</td>
+			<td id="priceid3">0.00</td>
+		</tr> -->
+	</table>
+
+	<div class="total_price">
+		<table>
+			<tr>
+				<td>Subtotal</td>
+				<td id="sub">0.00</td>
+			</tr>
+			<tr>
+				<td>Tax</td>
+				<td>35.00</td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td id="total">35.00</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+
+
+<!-- --------footer------- -->
+
+
+	<div class="footer">
+	<div class="small-conatiner5">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-6">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and ios mobile phone</p>
+				<div class="app-logo">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9piJ5cY3IAN9q4bd6DQphOyMZDJ2XaCQIZg&usqp=CAU" class="img1">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPRjkX9lU9_Ke5vD9ImbeLA2giwVX1GDgrg&usqp=CAU" class="img2">
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL_WJ_YS4Mrv5cieYkRJp5aw0lO3sd7cBiQ&usqp=CAU" height="50px" width="100px">
+				<p>Our purpose is to sustainably make the Pleasure and Benefits of Sports Accessible to All.</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+            <div class="col-lg-3 col-md-3 col-6">
+            	<h3>Follow Us</h3>
+            	<ul>
+            		<li>Facebook</li>
+            		<li>Twitter</li>
+            		<li>Instagram</li>
+            		<li>YouTube</li>
+            	</ul>
+            </div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2021</p>
+	</div>
+</div>
+
+<script>
+	var Menuitems = document.getElementById("Menuitems");
+	Menuitems.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(Menuitems.style.maxHeight == "0px")
+		{
+			Menuitems.style.maxHeight = "200px";
+		}
+		else
+		{
+			Menuitems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+
+<!-- -----js for value-------- -->
+
+<script>
+	function decr(incdec,itemprice){
+		var inp1 = document.getElementById(incdec);
+		var price1 = document.getElementById(itemprice);
+		var subprice = document.getElementById("sub");
+		var totalprice = document.getElementById("total");
+		
+		if(inp1.value<=0)
+		{
+			
+			alert("Negative not allowed");
+			inp1.value = 0;
+
+		}
+		else
+		{
+			inp1.style.color="black";
+			inp1.style.background="white";
+			inp1.value=parseInt(inp1.value)-1;
+			price1.innerHTML=parseInt(price1.innerHTML)-50;
+			subprice.innerHTML=parseInt(subprice.innerHTML)-50;
+			totalprice.innerHTML=parseInt(totalprice.innerHTML)-50;
+			
+		}
+	}
+
+	function incr(incdec,itemprice){
+		var inp1 = document.getElementById(incdec);
+		var price1 = document.getElementById(itemprice);
+		var subprice = document.getElementById("sub");
+		var totalprice = document.getElementById("total");
+		if(inp1.value>=5)
+		{
+			inp1.style.color="white";
+			inp1.style.background="red";
+			inp1.value = 5;
+			alert("Max 5 allowed");
+			
+		}
+		else
+		{
+			inp1.value=parseInt(inp1.value)+1;
+			price1.innerHTML=parseInt(price1.innerHTML)+50;
+			subprice.innerHTML=parseInt(subprice.innerHTML)+50;
+			totalprice.innerHTML=parseInt(totalprice.innerHTML)+50;
+		}
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productdetails</title>
+	<link rel="stylesheet" type="text/css" href="MyStore.css">
+
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,300">
+</head>
+<body>
+
+
+
+<div class="container pink pink1 pt-3">
+	<div class="navbar">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL_WJ_YS4Mrv5cieYkRJp5aw0lO3sd7cBiQ&usqp=CAU" height="50px" width="100px">
+			<nav>
+				<ul id="Menuitems">
+					<li><a href="MyStore.html">Home</a></li>
+					<li><a href="#productid">Product</a></li>
+					<li><a href="#aboutid">About</a></li>
+					<li><a href="#contactid">Contact</a></li>
+					<li><a href="accountCart.html">Account</a></li>
+				</ul>
+			</nav>
+			<h1></h1><a href="cart.html"><i class="fa fa-shopping-cart fa-2x" style="color: black"></i></a>
+			<i class=" fa fa-align-justify fa-2x menu-icon" onclick="menutoggle()"></i>
+		</div>
+	</div>
+
+
+
+<!-- -----single product details----- -->
+<div class="small-container6">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-12">
+			<img class="img2" id="productimg" src="https://rukminim1.flixcart.com/image/880/1056/k0wqwsw0/sweatshirt/4/e/g/m-ea0416-adidas-original-imafkheumhhqdvhx.jpeg?q=50" width="100%">
+
+			<div class="small-img-row pt-3">
+				<div class="small-img-col">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/k0wqwsw0/sweatshirt/4/e/g/m-ea0416-adidas-original-imafkheuksztjytk.jpeg?q=50" width="100%" class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/k0wqwsw0/sweatshirt/4/e/g/m-ea0416-adidas-original-imafkheu39f4xzcs.jpeg?q=50" width="100%" class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/k0wqwsw0/sweatshirt/4/e/g/m-ea0416-adidas-original-imafkheunh7rbp5m.jpeg?q=50" width="100%" class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="https://rukminim1.flixcart.com/image/880/1056/k0wqwsw0/sweatshirt/4/e/g/m-ea0416-adidas-original-imafkheuguwqd64g.jpeg?q=50" width="100%" class="small-img">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-12">
+			<p>Home / T-Shirt</p>
+			<h2>Full Sleeve Solid Women Sweatshirt</h2>
+			<h4>₹566</h4>
+			<select>
+				<option>Select Size</option>
+				<option>XXL</option>
+				<option>XL</option>
+				<option>Large</option>
+				<option>Medium</option>
+				<option>Small</option>
+			</select><br>
+			<!-- <input type="number" value="1"> -->
+			<a href="cart.html" class="btn mt-4" style="background-color: #ff523b;color: #fff;padding : 8px 30px;margin: 30px 0;border-radius: 30px;">Add To Cart</a>
+
+			<a href="cart.html" class="btn mt-4" style="background-color: #ff523b;color: #fff;padding : 8px 30px;margin: 30px 0;border-radius: 30px;">Buy Now</a>
+
+			<h3>Product Details<i class="fa fa-indent pl-2" style="color: red"></i></h3>
+			<p></p>
+		</div>
+	</div>
+</div>
+
+<div class="small-conatiner1 mt-5 pt-5">
+	<div class="row row-2">
+		<h2>Related Products</h2>
+		<hr id="indicator1">
+		<p>View More</p>
+	</div>
+</div>
+
+<div class="small-conatiner1 mt-5 mb-5" style="text-align: center" id="productid">
+	<div class="row justify-content-around">
+		<div class=" second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kn6cxow0/t-shirt/0/3/g/l-trdrnful-d35-tripr-original-imagfwswy9ghhksh.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>₹566</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/k3uhhu80/shoe/u/e/9/combo-1562-1563-7-swiggy-multicolor-original-imafmu6gttzbr9cj.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>₹566</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kkcwo7k0/track-pant/h/2/c/xl-solid-men-black-track-pants-foxter-original-imafzq5fp3jr5ktu.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>₹566</h6>
+		</div>
+		<div class="second col-lg-3 col-md-3 col-12 pb-5 mb-5">
+			<img src="https://rukminim1.flixcart.com/image/880/1056/kdhphu80-0/t-shirt/i/z/8/s-mss20pn048a-metronaut-original-imafudwmdbztzwrt.jpeg?q=50" height="100" width="100">
+			<h6>Red Printed T-Shirt</h6>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<h6>₹566</h6>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- --------footer------- -->
+
+
+	<div class="footer">
+	<div class="small-conatiner5">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-6">
+				<h3>Download Our App</h3>
+				<p>Download App for Android and ios mobile phone</p>
+				<div class="app-logo">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9piJ5cY3IAN9q4bd6DQphOyMZDJ2XaCQIZg&usqp=CAU" class="img1">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPRjkX9lU9_Ke5vD9ImbeLA2giwVX1GDgrg&usqp=CAU" class="img2">
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL_WJ_YS4Mrv5cieYkRJp5aw0lO3sd7cBiQ&usqp=CAU" height="50px" width="100px">
+				<p>Our purpose is to sustainably make the Pleasure and Benefits of Sports Accessible to All.</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-6">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+            <div class="col-lg-3 col-md-3 col-6">
+            	<h3>Follow Us</h3>
+            	<ul>
+            		<li>Facebook</li>
+            		<li>Twitter</li>
+            		<li>Instagram</li>
+            		<li>YouTube</li>
+            	</ul>
+            </div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2021</p>
+	</div>
+</div>
+
+<script>
+	var Menuitems = document.getElementById("Menuitems");
+	Menuitems.style.maxHeight = "0px";
+
+	function menutoggle()
+	{
+		if(Menuitems.style.maxHeight == "0px")
+		{
+			Menuitems.style.maxHeight = "200px";
+		}
+		else
+		{
+			Menuitems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+
+	<!-- -------js for product gallery---------- -->
+	<script>
+		var Productimg = document.getElementById("productimg");
+		var smallimg = document.getElementsByClassName("small-img");
+
+		smallimg[0].onclick = function(){
+			Productimg.src = smallimg[0].src;
+		}
+
+		smallimg[1].onclick = function(){
+			Productimg.src = smallimg[1].src;
+		}
+
+		smallimg[2].onclick = function(){
+			Productimg.src = smallimg[2].src;
+		}
+
+		smallimg[3].onclick = function(){
+			Productimg.src = smallimg[3].src;
+		}
+	</script>
+</body>
+</html>
